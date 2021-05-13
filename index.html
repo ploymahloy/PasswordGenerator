@@ -14,24 +14,31 @@
     <p class="title">Password Generator</p>
   
     <form>
-
-      <textarea id="password"></textarea>
-
+      
       <label>Number of Characters</label>
-      <input type="range" min="8" max="128" id="slider"><span id="slideVal"></span>
 
-      <label for="lowercase">Lowercase</label>
-      <input type="checkbox" name="lowercase" value="lowercase" id="lowercase" class="checkbox">
-
-      <label for="uppercase">Uppercase</label>
-      <input type="checkbox" name="uppercase" value="uppercase" id="uppercase" class="checkbox">
-
-      <label for="numbers">Numbers</label>
-      <input type="checkbox" name="numbers" value="numbers" id="numbers" class="checkbox">
-
-      <label for="symbols">Symbols</label>
-      <input type="checkbox" name="symbols" value="symbols" id="symbols" class="checkbox">
-
+      <div>
+        <input type="range" min="8" max="50" value="8" id="slider"><span id="slideVal"></span>
+      </div>
+      
+      <div>
+        <label for="lowercase">Lowercase</label>
+        <input type="checkbox" name="lowercase" value="lowercase" id="lowercase" class="checkbox">
+      </div> 
+      <div>
+        <label for="uppercase">Uppercase</label>
+        <input type="checkbox" name="uppercase" value="uppercase" id="uppercase" class="checkbox">
+      </div> 
+      <div>
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" name="numbers" value="numbers" id="numbers" class="checkbox">
+      </div>  
+      <div>
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" name="symbols" value="symbols" id="symbols" class="checkbox">
+      </div>
+      
+      <textarea id="password"></textarea>
       <button onclick="buttonClick(event)">Generate Password</button>
 
     </form>

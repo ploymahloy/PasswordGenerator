@@ -15,7 +15,9 @@ body {
 
 .card {
   min-height: 250px;
-  border-radius: 50px;
+  border-radius: 20px;
+
+  max-width: 65%;
 
   padding: 20px;
 
@@ -28,34 +30,35 @@ body {
   padding-bottom: 20px;
 }
 
-form {
-  border: 1px solid fuchsia;
+
+#slider::-webkit-slider-thumb {
+  cursor: pointer;
+} 
+
+label {
+  display: inline-block;
+  width: 260px;
+  padding: 5px;
+  
+  font-size: 20px;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  
+  cursor: pointer;
 }
 
 textarea {
   background-color: white;
 }
 
-/* label {
-  display: inline-block;
-  width: 260px;
-  padding: 5px;
+button {
+  font-size: 24px;
+}
 
-  font-size: 25px;
-} */
-
-/* .checkbox {
-  width: 20px;
-  height: 20px;
-  
-  cursor: pointer;
-} */
-
-#slider::-webkit-slider-thumb {
-  cursor: pointer;
-} 
-
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .card {
     width: 50%;
   }
@@ -65,4 +68,4 @@ textarea {
   .card {
     width: 65%;
   }
-}
+} */
